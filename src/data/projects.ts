@@ -101,7 +101,7 @@ export const projects: Project[] = [
     title: 'Portfolio website / K3S',
     description: 'Moderne portfolio-website med cloud-native deployment på Kubernetes',
     detailedDescription: 'Dette projekt er en Vue.js frontend deployed i mit eget hygge-Kubernetes cluster. Websitet er bygget med Vue 3, TypeScript og PrimeVue med Vite som build tool. Hele applikationen kører i en container via. Docker og er deployed på mit cluster hostet på en Hetzner cloud server i Finland.',
-    githubUrl: ''
+    githubUrl: 'https://github.com/LasseMG/portolio-ui',
     technologies: ['Vue.js 3', 'TypeScript', 'Vite', 'PrimeVue', 'Docker', 'Kubernetes', 'k3s', 'Traefik', 'Cert-Manager', 'Hetzner Cloud', 'Nginx'],
     features: [
       'Moderne UI med Vue 3 Composition API og TypeScript',
