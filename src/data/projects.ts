@@ -98,17 +98,17 @@ export const projects: Project[] = [
   },
   {
     id: 'portfolio-website',
-    title: 'Portfolio website / K3S',
-    description: 'Moderne portfolio-website med cloud-native deployment på Kubernetes',
-    detailedDescription: 'Dette projekt er en Vue.js frontend deployed i mit eget hygge-Kubernetes cluster. Websitet er bygget med Vue 3, TypeScript og PrimeVue med Vite som build tool. Hele applikationen kører i en container via. Docker og er deployed på mit cluster hostet på en Hetzner cloud server i Finland.',
+    title: 'Portfolio website / Coolify',
+    description: 'Moderne portfolio-website med automatiseret deployment via Coolify',
+    detailedDescription: 'Dette projekt er en Vue.js frontend deployed via Coolify - en open source, self-hostable Platform-as-a-Service. Websitet er bygget med Vue 3, TypeScript og PrimeVue med Vite som build tool. Coolify henter koden direkte fra GitHub-repositoryet, bygger Docker-imaget automatisk og deployer applikationen. SSL-certifikater genereres og fornyes automatisk via Let\'s Encrypt.',
     githubUrl: 'https://github.com/LasseMG/portolio-ui',
-    technologies: ['Vue.js 3', 'TypeScript', 'Vite', 'PrimeVue', 'Docker', 'Kubernetes', 'k3s', 'Traefik', 'Cert-Manager', 'Hetzner Cloud', 'Nginx'],
+    technologies: ['Vue.js 3', 'TypeScript', 'Vite', 'PrimeVue', 'Docker', 'Coolify', 'Hetzner Cloud', 'Nginx', 'Let\'s Encrypt'],
     features: [
       'Moderne UI med Vue 3 Composition API og TypeScript',
       'Projekt showcase sider med detaljer og link til GitHub repo',
-      'Containeriseret applikation med Docker builds',
-      'K3s Kubernetes cluster på Hetzner cloud server',
-      'Automatisk HTTPS med Cert-Manager og Let\'s Encrypt',
+      'Automatiseret deployment fra GitHub via Coolify',
+      'Automatisk SSL-certifikat generering og fornyelse med Let\'s Encrypt',
+      'Self-hosted PaaS løsning på Hetzner cloud server',
     ],
     color: '#ff3535ff',
     highlights: [
@@ -117,20 +117,60 @@ export const projects: Project[] = [
         description: 'Vue 3 med Composition API, TypeScript og PrimeVue component library for et moderne UI'
       },
       {
-        name: 'Containerization',
-        description: 'Docker builds til production images deployed i K3S'
+        name: 'Coolify PaaS',
+        description: 'Open source, self-hosted Platform-as-a-Service der håndterer builds, deployments og infrastruktur'
       },
       {
-        name: 'K3s Cluster',
-        description: 'Lightweight Kubernetes distribution kørt på Hetzner cloud server i Finland'
+        name: 'GitHub Integration',
+        description: 'Automatisk deployment ved push til main branch - Coolify henter kode og bygger Docker image'
       },
       {
-        name: 'Ingress & SSL',
-        description: 'Traefik ingress controller integreret med Cert-Manager for automatisk SSL-certificering og fornyelse via Let\'s Encrypt'
+        name: 'SSL & Sikkerhed',
+        description: 'Automatisk SSL-certifikat generering og fornyelse via Let\'s Encrypt integration i Coolify'
+      }
+    ]
+  },
+  {
+    id: 'sap-learning',
+    title: 'SAP Business Technology Platform',
+    description: 'Certificeringer og kurser om SAP BTP, CAP, HANA, Cloud Foundry, Integration Suite og SAP Build',
+    detailedDescription: 'Gennem SAP Learning har jeg opnået certificeringer inden for SAP Business Technology Platform og relaterede teknologier. Jeg har gennemført kurser i SAP BTP fundamentals, cloud computing arkitektur, Integration Platform as a Service (iPaaS) og Clean Core principper for SAP S/4HANA Cloud. Derudover har jeg hands-on erfaring med at bygge applikationer i SAP Cloud Application Programming Model (CAP), forbundet til SAP HANA database, deployed til Cloud Foundry og udviklet SAP Fiori brugergrænseflader. Jeg har også gennemført SAP Integration Suite kurset, som dækker API Management, SAP Business Accelerator Hub og Event Mesh. Desuden har jeg gennemført Extend S/4HANA with SAP Build kurset, hvor jeg har bygget extensions med SAP Build og brugt SAP Joule til at generere Fiori applikationer.',
+    imageUrl: '/sap-logo.png',
+    technologies: ['SAP BTP', 'SAP CAP', 'SAP HANA', 'Cloud Foundry', 'SAP Fiori', 'SAP Integration Suite', 'SAP Build', 'SAP Joule', 'iPaaS', 'SAP Clean Core'],
+    features: [
+      'SAP Business Technology Platform fundamentals og cloud strategi',
+      'Applikationsudvikling med SAP Cloud Application Programming Model (CAP)',
+      'Database integration med SAP HANA',
+      'Deployment til Cloud Foundry runtime',
+      'SAP Fiori UI udvikling',
+      'Integration Suite: API Management, Business Accelerator Hub og Event Mesh',
+      'S/4HANA extensions med SAP Build og Fiori generering via SAP Joule'
+    ],
+    color: '#0070f2',
+    highlights: [
+      {
+        name: 'Discovering SAP BTP',
+        description: 'Kursus i SAP Business Technology Platform fundamentals - Application Development og Cloud Strategy'
       },
       {
-        name: 'Kommer snart: DevOps Pipeline',
-        description: 'Automatiserede tests, image build + deployment til cluster ved push til main branch'
+        name: 'Exploring SAP BTP',
+        description: 'Kursus i cloud computing arkitektur, Integration Platform as a Service (iPaaS) og analytics'
+      },
+      {
+        name: 'SAP Clean Core',
+        description: 'Kursus i Managing Clean Core for SAP S/4HANA Cloud - cloud-compliant extensions og ABAP'
+      },
+      {
+        name: 'CAP App Development',
+        description: 'Hands-on erfaring med at bygge full-stack applikation i SAP CAP med HANA database og Fiori UI'
+      },
+      {
+        name: 'Integration Suite',
+        description: 'Kursus i SAP Integration Suite - API Management, Business Accelerator Hub og Event Mesh'
+      },
+      {
+        name: 'Extend S/4HANA',
+        description: 'Kursus i Extend S/4HANA with SAP Build - bygge extensions og generere Fiori applikationer med SAP Joule'
       }
     ]
   }
