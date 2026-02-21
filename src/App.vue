@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import TopBar from './components/TopBar.vue'
+import FloatingAboutButton from './components/FloatingAboutButton.vue'
 import { onMounted } from 'vue'
 
 onMounted(() => {
@@ -11,6 +12,7 @@ onMounted(() => {
 <template>
   <div class="app-container">
     <TopBar />
+    <FloatingAboutButton />
     <main class="main-content">
       <RouterView v-slot="{ Component }">
         <Transition name="fade" mode="out-in">

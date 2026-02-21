@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue'
+import { onMounted, computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import Button from 'primevue/button'
 import Tag from 'primevue/tag'
@@ -18,8 +18,8 @@ const projectStyles = computed(() => {
 
   return {
     '--project-color': project.value.color,
-    '--project-color-light': project.value.color + '20', // 20 = ~12% opacity in hex
-    '--project-color-lighter': project.value.color + '10', // 10 = ~6% opacity in hex
+    '--project-color-light': project.value.color + '20',
+    '--project-color-lighter': project.value.color + '10',
   }
 })
 
