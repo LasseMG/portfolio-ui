@@ -39,7 +39,7 @@ export const projects: Project[] = [
     id: "kuncontemporary-gallery",
     title: "KunContemporary Galleri",
     description: "Studieprojekt omhandlende en moderne kunstgalleri-hjemmeside med content management system",
-    detailedDescription: "En omfattende webapplikation til styring og fremvisning af samtidkunst og udstillinger. Platformen omfatter et sikkert adminpanel til galleristyring og en offentlig brugerflade, hvor besøgende kan udforske udstillinger, kunstnere og tilgængelige kunstværker. Systemet inkluderer avanceret billedhåndtering med automatisk skalering og PDF-generering af arbejdslister til udstillinger.",
+    detailedDescription: "Et studieprojekt på 4. semester af datamatikeruddannelsen, hvor vi udviklede en hjemmeside til styring og fremvisning af samtidkunst og udstillinger. Platformen omfatter et sikkert adminpanel til galleristyring og en offentlig brugerflade, hvor besøgende kan udforske udstillinger, kunstnere og tilgængelige kunstværker. Systemet inkluderer avanceret billedhåndtering med automatisk skalering og PDF-generering af arbejdslister til udstillinger for at lette arbejdsprocesser.",
     githubUrl: "https://github.com/LasseMG/KunContemporary",
     imageUrl: undefined,
     thumbnail: undefined,
